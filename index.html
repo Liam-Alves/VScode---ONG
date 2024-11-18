@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outro Olhar</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<!-- CSS do Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   
+</head>
+<body>
+
+    <div id="navbar-container"></div>
+    
+    
+<!-- Banner Principal -->
+<section class="main-banner">
+    <div class="banner-text">
+        <h1>Conectando famílias, compartilhando saberes, transformando vidas.</h1>
+        <p>Apoio e recursos para famílias e profissionais.</p>
+       
+    </div>
+</section>
+
+<section class="puzzle-banner">
+    <div class="puzzle-content">
+        <h2 class="puzzle-text">Descubra qual o seu nível de autismo</h2>
+        <a href="/pages/teste.html"  class="cta-button">Teste seu nível de TEA</a>
+    </div>
+</section>
+
+
+
+<section class="puzzle-bar"></section>
+
+<div class="icon-section">
+    <!-- Card para Agenda de Eventos -->
+    <a href="/pages/eventos.html" class="icon-card-link">
+        <div class="icon-card blue">
+            <div class="icon icon-shadow"></div>
+            <div class="label">Agenda de Eventos</div>
+        </div>
+    </a>
+    
+    <!-- Card para Lista de Profissionais -->
+    <a href="/pages/profissionais.html" class="icon-card-link">
+        <div class="icon-card yellow">
+            <div class="icon icon-shadow"></div>
+            <div class="label">Lista de Profissionais</div>
+        </div>
+    </a>
+    
+    <!-- Card para Conheça Seus Direitos -->
+    <a href="/pages/direitos.html" class="icon-card-link">
+        <div class="icon-card red">
+            <div class="icon icon-shadow"></div>
+            <div class="label">Conheça Seus Direitos</div>
+        </div>
+    </a>
+</div>
+
+
+
+<div class="articles-section">
+    <!-- Título da Seção -->
+    <div class="section-title">Artigos Recentes</div>
+
+    <!-- Artigo Principal -->
+    <div class="main-article">
+        <div class="cta-text">
+            <h2 class="cta-title">Solidariedade em Ação: Transformação Inspiradora na Associação Outro Olhar</h2>
+            <p class="cta-description">Em um dia marcado pela união e altruísmo, a sede da Associação Outro Olhar 
+                foi palco de um mutirão de benfeitorias liderado pela Beiersdorf (Nívea). </p>
+            <a href="#" class="cta-link">Leia mais</a>
+        </div>
+        <div class="main-article-img"></div>
+    </div>
+
+    <!-- Mais Artigos -->
+    <div class="more-articles">
+        <!-- Cartão do Artigo -->
+        <div class="article-card">
+            <div class="article-img"></div>
+            <img src="/images/images-home/artigo 2.jpeg" class="article-img" alt="Evento inclusao e açao">
+            <div class="article-title">Sucessos e Contribuições na 4ª Edição do Evento Inclusão e Ação</div>
+            <a href="#" class="article-link">Leia mais</a>
+        </div>
+        <div class="article-card">
+            <div class="article-img"></div>
+            <img src="/images/images-home/artigo 3.png" class="article-img" alt="Evento inclusao e açao">
+            <div class="article-title">Desenhos e Dialogo na 4ª Edição do Evento 'Inclusão & Ação</div>
+            <a href="#" class="article-link">Leia mais</a>
+        </div>
+        <div class="article-card">
+            <div class="article-img"></div>
+            <img src="/images/images-home/artigo 4.jpeg" class="article-img" alt="50 anos da Bobst Meerbusch">
+            <div class="article-title">Os 50 Anos da Bobst Meerbusch no Brasil Celebrados com Inclusão</div>
+            <a href="#" class="article-link">Leia mais</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="newsletter-section">
+    <!-- CTA com Texto -->
+    <div class="newsletter-cta">
+        
+        <img src="/images/images-home/news.png"  alt="icon news">
+        <h2 class="newsletter-title">Mantenha-se conectado com a <strong>Outro Olhar</strong> </h2>
+        <p class="newsletter-description">Assine gratuitamente nossa newsletter e receba no seu e-mail as últimas atualizações,
+             artigos exclusivos e convites para eventos. </p>
+    </div>
+
+    <!-- Formulário da Newsletter -->
+    <form class="newsletter-form">
+        <input type="text" placeholder="Seu nome" class="newsletter-input" />
+        <input type="email" placeholder="Seu email" class="newsletter-input" />
+        <button type="submit" class="newsletter-button">Assinar</button>
+    </form>
+</div>
+
+
+
+<!-- Phrase et imagem azul -->
+
+<section class="phrase-section">
+    <div class="phrase-content">
+        <h1 class="phrase-title">Juntos, construímos pontes de compreensão e apoio para um mundo mais inclusivo.</h1>
+    
+    </div>
+
+</section>
+
+<div id="footer"></div>
+
+<!-- JS do Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Seu script personalizado -->
+<script src="/js/navbar.js"></script>
+
+  <!-- Script para carregar o footer dinamicamente -->
+  <script>
+    // Carregar o conteúdo do arquivo footer.html e inserir no div com ID "footer"
+    fetch('/pages/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        });
+</script>
+
+</body>
+</html>

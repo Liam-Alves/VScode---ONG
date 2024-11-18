@@ -1,0 +1,736 @@
+/* ===========================
+   ESTILOS GLOBAIS E RESET
+=========================== */
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    color: #333;
+    background-color: #F7F7F7;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px; /* Limits the width for larger screens */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===========================
+   CABEÇALHO E LOGO
+=========================== */
+
+.header-wide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1920px;
+    background-color: #F7F7F7;
+    position: relative;
+    padding-bottom: 80px;
+    overflow: hidden; /* Para evitar qualquer overflow das listras */
+
+}
+
+/* Logo do Cabeçalho */
+.header-logo {
+    position:absolute;
+    top: 40px; /* Ajuste conforme necessário */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F7F7F7;
+    padding: 10px 20px;
+    border-radius: 8px;
+    z-index: 2; /* Coloca o logo sobre as listras */
+    text-align: center;
+}
+
+.header-logo-text {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #212121;
+    letter-spacing: 0.3em;
+   
+}
+
+/* Estilo do Título do Logo */
+.header-logo-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #212121;
+    text-align: center;
+}
+
+
+/* Imagem de Listras Coloridas */
+.header-stripes img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 10px ;
+}
+
+
+
+
+
+/* ===========================
+   BOTÃO DO CABEÇALHO
+=========================== */
+
+.header-button a {
+    text-decoration: none;
+    color: #F7F7F7; /* Cor do texto do botão */
+}
+
+
+.header-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 239px;
+    height: 40px;
+    background: #178038;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    margin-left: 15px; 
+    gap: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #F7F7F7;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+
+.header-button:hover {
+    background-color: #F7F7F7; 
+    color: #178038; 
+}
+
+
+
+/* ===========================
+  BANNER PRINCIPAL
+=========================== */
+
+.main-banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinhamento para posicionar o texto */
+    height: 740px; /* Ajuste conforme necessário */
+    background-image: url('/images/images-home/hero.png'); /* Defina a imagem como fundo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0 100px; /* Ajuste de padding para o layout */
+    border-radius: 0px 40px 0px 0px; /* Bordas arredondadas específicas */
+
+}
+
+/* Container de Texto sobre o Banner */
+.banner-text {
+    position:absolute;
+    width: 831px;
+    height: 405px;
+    top: 159px;
+    left: 1004px;
+    padding: 60px 20px 20px 20px;
+    background: rgba(255, 255, 255, 0.8); /* Fundo branco com opacidade */
+    border-radius: 0px 40px 0px 40px; /* Bordas arredondadas específicas */
+    text-align: left;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve para destacar */
+}
+
+.banner-text h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 50px;
+    line-height: 1.2;
+    color: #212121;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+.banner-text p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    color: #212121;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+/* ===========================
+   PUZZLE BANNER VERDE
+=========================== */
+
+.puzzle-banner {
+    background: #D5E8D4; /* Fundo verde claro */
+    display:flex;
+    height: 460px;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0; /* Ajuste do padding para centralização vertical */
+    position: relative;
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse o banner */
+}
+
+/* Adiciona a imagem do quebra-cabeça nas laterais */
+.puzzle-banner::before,
+.puzzle-banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%; /* Ajuste a largura conforme necessário */
+    height: 100%; /* Preencher toda a altura do banner */
+    background: url('/images/images-home/puzzle-default.png') no-repeat;
+    background-size: cover;
+  
+}
+
+
+/* Container do conteúdo */
+.puzzle-content {
+    text-align: center;
+    z-index: 1; /* Garante que o conteúdo fique acima das bordas */
+}
+
+/* Estilos para o Texto do Banner */
+.puzzle-text {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 50px;
+    color: #178038; /* Cor verde escuro */
+    margin-bottom: 20px;
+}
+
+/* Estilos para o Botão */
+.cta-button {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #178038; /* Texto verde */
+    background-color: #ffffff; /* Fundo branco do botão */
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); /* Sombra para destaque */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Efeito de transição */
+    text-decoration: none;
+}
+
+
+.cta-button:hover {
+    background-color: #178038; /* Fundo verde ao hover */
+    color: #ffffff; /* Texto branco ao hover */
+}
+
+/* ===========================
+   ICONES
+=========================== */
+.icon-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 200px;
+    gap: 141px;
+    width: 100%;
+    max-width: 1920px;
+    height: 600px;
+    background: #F7F7F7;
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+/* Estilos Gerais dos Cards */
+.icon-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    width: 366.67px;
+    height: 300px;
+    border-radius: 0px 40px;
+    isolation: isolate;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Efeito de transição */
+    
+}
+
+/* Ellipse Oculta */
+.icon-card .ellipse {
+    position: absolute;
+    display: none;
+}
+
+
+/* Estilos do Texto */
+.icon-card .label {
+    width: 100%;
+    max-width: 366.67px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 60px;
+}
+
+/* Estilização dos Cards Individuais */
+.icon-card.blue {
+    background: #0C97FA;
+    color: #F7F7F7;
+    background-image: url(/images/images-home/icon-calendar.png);
+    background-size: 100px 100px; /* Tamanho do ícone, ajuste conforme necessário */
+    background-repeat: no-repeat;
+    background-position: center 20%; /* Posição do ícone */
+    transition: all 0.3s ease; /* Suaviza a transição */
+}
+
+.icon-card.blue:hover {
+    background: #E7F0FE; /* Cor do fundo ao passar o mouse */
+    color: #0C97FA; /* Cor do texto e ícone invertida */
+    background-image: url(/images/images-home/icon-calendar-color.png);
+    background-size: 100px 100px; /* Tamanho do ícone, ajuste conforme necessário */
+    background-repeat: no-repeat;
+    background-position: center 20%; /* Posição do ícone */
+    transition: all 0.3s ease; /* Suaviza a transição */
+}
+
+.icon-card.yellow {
+    background: #FCBE17;
+    color: #212121;
+    background-image: url(/images/images-home/user-list.png);
+    background-size: 100px 100px; /* Tamanho do ícone, ajuste conforme necessário */
+    background-repeat: no-repeat;
+    background-position: center 20%; /* Posição do ícone */
+    transition: all 0.3s ease; /* Suaviza a transição */
+
+}
+
+.icon-card.yellow:hover {
+
+    background: #FEE293; /* Cor do fundo ao passar o mouse */
+    color:#212121; /* Cor do texto e ícone invertida */
+    background-image: url(/images/images-home/icon-user-list\ color.png);
+    background-size: 100px 100px; /* Tamanho do ícone, ajuste conforme necessário */
+    background-repeat: no-repeat;
+    background-position: center 20%; /* Posição do ícone */
+    transition: all 0.3s ease; /* Suaviza a transição */
+}
+
+.icon-card.red {
+    background: #EA4336;
+    color: #F7F7F7;
+    background-image: url(/images/images-home/icon-rights.png);
+    background-size: 100px 100px; /* Tamanho do ícone, ajuste conforme necessário */
+    background-repeat: no-repeat;
+    background-position: center 20%; /* Posição do ícone */
+    transition: all 0.3s ease; /* Suaviza a transição */
+
+}
+
+.icon-card.red:hover {
+    background: #FCE8E6; /* Cor do fundo ao passar o mouse */
+    color:#EA4336; /* Cor do texto e ícone invertida */
+    background-image: url(/images/images-home/icon-rights-color.png);
+    background-size: 100px 100px; /* Tamanho do ícone, ajuste conforme necessário */
+    background-repeat: no-repeat;
+    background-position: center 20%; /* Posição do ícone */
+    transition: all 0.3s ease; /* Suaviza a transição */
+}
+
+/* Estilização para remover decoração do link */
+.icon-card-link {
+    text-decoration: none;
+    display: block; /* Para que o link ocupe toda a área do card */
+    color: inherit; /* Herda a cor do .icon-card */
+}
+
+
+/* ===========================
+   ARTIGOS
+=========================== */
+
+.articles-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 200px 200px;
+    gap: 80px;
+    width: 100%;
+    max-width: 1920px;
+    background: #E7F0FE;
+    margin: 0 auto;
+}
+
+/* Título da Seção */
+.section-title {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+    max-width: 1520px;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #212121;
+    border-bottom: 1px solid #212121;
+}
+
+/* Principal Artigo - Home */
+.main-article {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 40px;
+    width: 100%;
+    max-width: 1520px;
+    height: 500px;
+}
+
+/* CTA Text + Link */
+.cta-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 467px;
+}
+
+.cta-title {
+    font-family: 'Ubuntu';
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+    color: #212121;
+}
+
+.cta-description {
+    font-family: 'Open Sans';
+    font-size: 20px;
+    line-height: 27px;
+    color: #212121;
+}
+
+.cta-link {
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #0C97FA;
+    text-decoration: underline;
+}
+
+/* Imagem Principal do Artigo */
+.main-article-img {
+    width: 1013px;
+    height: 500px;
+    background: url(/images/images-home/artigo\ 1.jpeg) no-repeat center;
+    background-size: cover;
+    border-radius: 0px 40px;
+}
+
+/* Seção de Mais Artigos */
+.more-articles {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 59px;
+    width: 100%;
+    max-width: 1520px;
+}
+
+/* Estrutura de Artigos Adicionais */
+.article-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    width: 467.33px;
+    height: 488px;
+}
+
+/* Imagem de Artigos Adicionais */
+.article-img {
+    width: 100%;
+    height: 382px;
+    background: no-repeat center;
+    background-size: cover;
+    border-radius: 0px 40px;
+}
+
+/* Título do Artigo */
+.article-title {
+    font-family: 'Ubuntu';
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 38px;
+    color: #212121;
+}
+
+/* Link do Artigo */
+.article-link {
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: 400;
+    color: #0C97FA;
+    text-decoration: underline;
+    align-self: left;
+}
+
+
+
+/* ===========================
+   SEÇÃO NEWSLETTER
+=========================== */
+
+.newsletter-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 200px;
+    gap: 40px;
+    width: 100%;
+    max-width: 1920px;
+    height: 590px;
+    background: #F7F7F7;
+    margin: 0 auto;
+}
+
+/* CTA com Texto */
+.newsletter-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 493px;
+    height: 301px;
+}
+
+
+
+.newsletter-title {
+    font-family: 'Ubuntu';
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+    color: #212121;
+}
+
+.newsletter-description {
+    font-family: 'Open Sans';
+    font-size: 20px;
+    line-height: 27px;
+    color: #212121;
+}
+
+/* Formulário da Newsletter */
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 500px;
+    height: auto;
+}
+
+.newsletter-input {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(33, 33, 33, 0.5);
+    border-radius: 4px;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 24px;
+    color: #212121;
+}
+
+/* Botão de Enviar */
+.newsletter-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 112px;
+    height: 62px;
+    background: #178038;
+    border-radius: 6px;
+    border: none; /* Remove qualquer borda */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); /* Sombra para destaque */
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #F7F7F7;
+    cursor: pointer;
+    
+}
+
+
+
+/* ===========================
+   SEÇÃO IMAGEM AZUL COM A MAO
+=========================== */
+
+.phrase-section {
+    display:flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    height: 724px;
+    padding: 0 50px ;
+    gap: 10px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), 
+                url('/images/images-home/maos-coracao-transparente.png') no-repeat center right; /* Caminho da imagem */           
+    background-size: contain;
+    background-color: #0C97FA;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    
+}
+
+/* Texto da Frase */
+.phrase-content {
+    max-width: 711px;
+    color: #F7F7F7;
+}
+
+.phrase-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: 0.02em;
+    color: #F7F7F7;
+}
+
+
+
+/* ===========================
+   MEDIA QUERIES (RESPONSIVIDADE)
+=========================== */
+
+/* WIDE (largura maior que 1440px) */
+@media (min-width: 1440px) {
+    .header-logo-title {
+        font-size: 48px;
+    }
+    .header-button {
+        width: 260px;
+        height: 70px;
+    }
+
+    .phrase-section {
+        padding: 120px 100px;
+        height: auto;
+    }
+    .phrase-title {
+        font-size: 50px;
+        line-height: 60px;
+    }
+}
+
+/* DESKTOP (largura entre 1024px e 1440px) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .header-logo-title {
+        font-size: 40px;
+    }
+    .navbar {
+        padding: 10px 50px;
+    }
+
+    .phrase-section {
+        padding: 80px 50px;
+    }
+    .phrase-title {
+        font-size: 40px;
+        line-height: 48px;
+    }
+}
+
+/* TABLET (largura entre 768px e 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .header-logo-title {
+        font-size: 30px;
+    }
+    .header-button {
+        width: 200px;
+        padding: 15px;
+    }
+    .newsletter-section {
+        padding: 0 50px;
+        flex-direction: column;
+    }
+    .phrase-section {
+        padding: 60px 20px;
+    }
+    .phrase-title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+/* MOBILE (largura menor que 768px) */
+@media (max-width: 767px) {
+    .header-logo-title {
+        font-size: 24px;
+    }
+    .header-stripes {
+        height: 60px;
+    }
+    .navbar {
+        flex-direction: column;
+    }
+    .header-button {
+        width: 180px;
+        padding: 10px;
+    }
+    .newsletter-section {
+        padding: 0 20px;
+        height: auto;
+        flex-direction: column;
+    }
+    .phrase-title {
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+    }
+}
