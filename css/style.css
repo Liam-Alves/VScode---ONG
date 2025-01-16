@@ -41,7 +41,7 @@ img {
     max-width: 1920px;
     background-color: #F7F7F7;
     position: relative;
-    padding-bottom: 80px;
+    padding-bottom: 30px;
     overflow: hidden; /* Para evitar qualquer overflow das listras */
 
 }
@@ -111,7 +111,7 @@ img {
     align-items: center;
     width: 239px;
     height: 40px;
-    background: #178038;
+    background: #0C97FA;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 6px;
     margin-left: 15px; 
@@ -129,8 +129,8 @@ img {
 
 
 .header-button:hover {
-    background-color: #F7F7F7; 
-    color: #178038; 
+    background-color: #E7F0FE; 
+    color: #0C97FA; 
 }
 
 
@@ -186,332 +186,236 @@ img {
 }
 
 /* ===========================
-   PUZZLE BANNER VERDE
+   HOME PROJECTS SECTION
 =========================== */
 
-.puzzle-banner {
-    background: #D5E8D4; /* Fundo verde claro */
-    display:flex;
-    height: 460px;
-    justify-content: center;
-    align-items: center;
-    padding: 80px 0; /* Ajuste do padding para centralização vertical */
-    position: relative;
-    overflow: hidden; /* Garante que o conteúdo não ultrapasse o banner */
-}
-
-/* Adiciona a imagem do quebra-cabeça nas laterais */
-.puzzle-banner::before,
-.puzzle-banner::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 100%; /* Ajuste a largura conforme necessário */
-    height: 100%; /* Preencher toda a altura do banner */
-    background: url('/images/images-home/puzzle-default.png') no-repeat;
-    background-size: cover;
-  
-}
-
-
-/* Container do conteúdo */
-.puzzle-content {
-    text-align: center;
-    z-index: 1; /* Garante que o conteúdo fique acima das bordas */
-}
-
-/* Estilos para o Texto do Banner */
-.puzzle-text {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 50px;
-    color: #178038; /* Cor verde escuro */
-    margin-bottom: 20px;
-}
-
-/* Estilos para o Botão */
-.cta-button {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 22px;
-    text-transform: uppercase;
-    color: #178038; /* Texto verde */
-    background-color: #ffffff; /* Fundo branco do botão */
-    border: none;
-    border-radius: 6px;
-    padding: 10px 20px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); /* Sombra para destaque */
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s; /* Efeito de transição */
-    text-decoration: none;
-}
-
-
-.cta-button:hover {
-    background-color: #178038; /* Fundo verde ao hover */
-    color: #ffffff; /* Texto branco ao hover */
-}
-
-/* ===========================
-   ICONES
-=========================== */
-.icon-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 100px 200px;
-    gap: 141px;
-    width: 100%;
-    max-width: 1920px;
-    height: 600px;
-    background: #F7F7F7;
-    margin: 0 auto; /* Centraliza horizontalmente */
-}
-
-/* Estilos Gerais dos Cards */
-.icon-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-    width: 366.67px;
-    height: 300px;
-    border-radius: 0px 40px;
-    isolation: isolate;
-    position: relative;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s; /* Efeito de transição */
-    
-}
-
-/* Ellipse Oculta */
-.icon-card .ellipse {
-    position: absolute;
-    display: none;
-}
-
-
-/* Estilos do Texto */
-.icon-card .label {
-    width: 100%;
-    max-width: 366.67px;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 34px;
-    text-align: center;
-    text-transform: uppercase;
-    margin-top: 60px;
-}
-
-/* Estilização dos Cards Individuais */
-.icon-card.blue {
-    background: #0C97FA;
-    color: #F7F7F7;
-    background-image: url(/images/images-home/icon-calendar.png);
-    background-size: 100px 100px; /* Tamanho do ícone, ajuste conforme necessário */
-    background-repeat: no-repeat;
-    background-position: center 20%; /* Posição do ícone */
-    transition: all 0.3s ease; /* Suaviza a transição */
-}
-
-.icon-card.blue:hover {
-    background: #E7F0FE; /* Cor do fundo ao passar o mouse */
-    color: #0C97FA; /* Cor do texto e ícone invertida */
-    background-image: url(/images/images-home/icon-calendar-color.png);
-    background-size: 100px 100px; /* Tamanho do ícone, ajuste conforme necessário */
-    background-repeat: no-repeat;
-    background-position: center 20%; /* Posição do ícone */
-    transition: all 0.3s ease; /* Suaviza a transição */
-}
-
-.icon-card.yellow {
-    background: #FCBE17;
-    color: #212121;
-    background-image: url(/images/images-home/user-list.png);
-    background-size: 100px 100px; /* Tamanho do ícone, ajuste conforme necessário */
-    background-repeat: no-repeat;
-    background-position: center 20%; /* Posição do ícone */
-    transition: all 0.3s ease; /* Suaviza a transição */
-
-}
-
-.icon-card.yellow:hover {
-
-    background: #FEE293; /* Cor do fundo ao passar o mouse */
-    color:#212121; /* Cor do texto e ícone invertida */
-    background-image: url(/images/images-home/icon-user-list\ color.png);
-    background-size: 100px 100px; /* Tamanho do ícone, ajuste conforme necessário */
-    background-repeat: no-repeat;
-    background-position: center 20%; /* Posição do ícone */
-    transition: all 0.3s ease; /* Suaviza a transição */
-}
-
-.icon-card.red {
-    background: #EA4336;
-    color: #F7F7F7;
-    background-image: url(/images/images-home/icon-rights.png);
-    background-size: 100px 100px; /* Tamanho do ícone, ajuste conforme necessário */
-    background-repeat: no-repeat;
-    background-position: center 20%; /* Posição do ícone */
-    transition: all 0.3s ease; /* Suaviza a transição */
-
-}
-
-.icon-card.red:hover {
-    background: #FCE8E6; /* Cor do fundo ao passar o mouse */
-    color:#EA4336; /* Cor do texto e ícone invertida */
-    background-image: url(/images/images-home/icon-rights-color.png);
-    background-size: 100px 100px; /* Tamanho do ícone, ajuste conforme necessário */
-    background-repeat: no-repeat;
-    background-position: center 20%; /* Posição do ícone */
-    transition: all 0.3s ease; /* Suaviza a transição */
-}
-
-/* Estilização para remover decoração do link */
-.icon-card-link {
-    text-decoration: none;
-    display: block; /* Para que o link ocupe toda a área do card */
-    color: inherit; /* Herda a cor do .icon-card */
-}
-
-
-/* ===========================
-   ARTIGOS
-=========================== */
-
-.articles-section {
+.home-projects {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 200px 200px;
-    gap: 80px;
+    padding: 40px 50px;
+    gap: 40px;
     width: 100%;
-    max-width: 1920px;
-    background: #E7F0FE;
+    max-width: 1280px;
+    background: #F7F7F7;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
-/* Título da Seção */
 .section-title {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
+    padding: 0;
     gap: 10px;
     width: 100%;
-    max-width: 1520px;
-    font-family: 'Open Sans';
-    font-size: 18px;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #212121;
+    max-width: 1180px;
     border-bottom: 1px solid #212121;
 }
 
-/* Principal Artigo - Home */
-.main-article {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    gap: 40px;
-    width: 100%;
-    max-width: 1520px;
-    height: 500px;
-}
-
-/* CTA Text + Link */
-.cta-text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    width: 467px;
-}
-
-.cta-title {
-    font-family: 'Ubuntu';
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 50px;
+.section-tag-title {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
     color: #212121;
+    margin: 0;
 }
 
-.cta-description {
-    font-family: 'Open Sans';
-    font-size: 20px;
-    line-height: 27px;
-    color: #212121;
-}
-
-.cta-link {
-    font-family: 'Open Sans';
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 28px;
-    color: #0C97FA;
-    text-decoration: underline;
-}
-
-/* Imagem Principal do Artigo */
-.main-article-img {
-    width: 1013px;
-    height: 500px;
-    background: url(/images/images-home/artigo\ 1.jpeg) no-repeat center;
-    background-size: cover;
-    border-radius: 0px 40px;
-}
-
-/* Seção de Mais Artigos */
-.more-articles {
+/* Container de projetos */
+.projects {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 59px;
+    justify-content: center;
+    gap: 60px;
     width: 100%;
-    max-width: 1520px;
+    max-width: 1180px;
+    box-sizing: border-box;
 }
 
-/* Estrutura de Artigos Adicionais */
-.article-card {
+/* Cards individuais */
+.project-card {
+    width: 265px;
+    height: 278px;
+    border-radius: 0px 0px 4px 0px;
+    overflow: hidden;
+    position: relative;
+    flex-shrink: 0;
+    transition: transform 0.3s ease; /* Suaviza o zoom no hover */
+    
+}
+
+.project-card:hover .img-shape {
+    opacity: 0.7; /* Adiciona opacidade escura */
+    
+
+}
+
+
+
+
+/* Formato da imagem */
+.img-shape {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0px 0px 4px 0px;
+    transition: opacity 0.3s ease, background-image 0.3s ease;
+   
+}
+
+
+/* ===========================
+   COMÉRCIO INCLUSIVO
+=========================== */
+/* Seção do Comércio */
+.comercio {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Contêiner do Mapa */
+  .map-container {
+    width: 100%;
+    height: 536px; /* Altura fixa como na imagem original */
+    background: url('/images/images-home/mapa.png') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    border-radius: 0px 40px 0px 0px; /* Borda arredondada como no design */
+  }
+  
+  /* Bloco Azul */
+  .blue-box {
+    position: absolute;
+    width: 579px;
+    height: 288px;
+    top: 124px;
+    right: 40px; /* Distância da borda direita */
+    background: #0C97FA;
+    border-radius: 0px 40px;
+    padding: 40px;
+    color: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Título do Bloco Azul */
+  .blue-box h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 50px;
+    margin: 0;
+  }
+  
+  /* Texto do Parágrafo */
+  .blue-box p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0;
+  }
+  
+  /* Botão */
+  .cta-button {
+    width: 217px;
+    height: 62px;
+    background: #ffffff;
+    color: #0C97FA;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 22px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background: #0C97FA;
+    color: #F7F7F7;
+  }
+  
+
+  /* ===========================
+   SEÇAO CARTILHAS
+=========================== */
+
+.cartilhas {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 30px;
-    width: 467.33px;
-    height: 488px;
-}
-
-/* Imagem de Artigos Adicionais */
-.article-img {
+    padding: 60px 50px;
+    gap: 40px;
     width: 100%;
-    height: 382px;
-    background: no-repeat center;
+    height: auto; 
+    background: #0A79C8;
+  }
+  
+  /* Título da Seção */
+  .cartilhas-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 10px;
+    width: 100%;
+    border-bottom: 1px solid #FBFBFB;
+  }
+  
+  .cartilhas-title h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #FBFBFB;
+    margin: 0;
+  }
+  
+  /* Conteúdo das Cartilhas */
+  .cartilhas-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Item Individual da Cartilha */
+  .cartilha-item {
+    width: 265px;
+    height: 379px;
+    border-radius: 0 0 10px 0;
     background-size: cover;
-    border-radius: 0px 40px;
-}
-
-/* Título do Artigo */
-.article-title {
-    font-family: 'Ubuntu';
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 38px;
-    color: #212121;
-}
-
-/* Link do Artigo */
-.article-link {
-    font-family: 'Open Sans';
-    font-size: 20px;
-    font-weight: 400;
-    color: #0C97FA;
-    text-decoration: underline;
-    align-self: left;
-}
-
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .cartilha-item:hover {
+    transform: scale(1.05); /* Efeito de zoom */
+  }
+  
 
 
 /* ===========================
@@ -589,9 +493,9 @@ img {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    width: 112px;
-    height: 62px;
-    background: #178038;
+    width: auto;
+    height: auto;
+    background: #0C97FA;
     border-radius: 6px;
     border: none; /* Remove qualquer borda */
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); /* Sombra para destaque */
@@ -602,6 +506,11 @@ img {
     color: #F7F7F7;
     cursor: pointer;
     
+}
+
+.newsletter-button:hover {
+    background-color: #F7F7F7;
+    color: #0C97FA;
 }
 
 
@@ -640,6 +549,181 @@ img {
     line-height: 72px;
     letter-spacing: 0.02em;
     color: #F7F7F7;
+}
+
+.phrase-text {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27.24px;
+  letter-spacing: 0.02em;
+  color: #F7F7F7;
+  width: 530px;
+  height: 54px;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.header-button-phrase a {
+    text-decoration: none;
+    color: #F7F7F7; /* Cor do texto do botão */
+ 
+}
+
+
+
+.header-button-phrase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 145px;
+    height: 62px;
+    background: #E7F0FE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    margin-left: 15px; 
+    gap: 10px;
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #0C97FA;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+    
+}
+
+
+.header-button-phrase:hover {
+    background-color: #0C97FA; 
+    color: #E7F0FE; 
+}
+
+/* ===========================
+  SEÇAO LINKS
+=========================== */
+
+
+.links-section {
+    display: flex;
+    justify-content: flex-end; /* Posiciona o conteúdo à direita */
+    align-items: flex-end;
+    padding: 100px 50px 50px; /* Espaçamento interno */
+    width: 100%; /* Ocupa toda a largura da tela */
+    height: 553px; /* Altura fixa */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), 
+                url('/images/images-home/links.png'); /* Substitua pelo caminho correto da imagem */
+    background-size: cover; /* Ajusta para cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+}
+
+/* Conteúdo de Texto + Botão */
+.links-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Posiciona o texto no início */
+    align-items: flex-start;
+    padding: 40px 0 0;
+    gap: 20px;
+    width: 572px; /* Largura do bloco */
+    height: 303px;
+    border-radius: 10px; /* Bordas arredondadas */
+    
+}
+
+/* Título */
+.links-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 50px;
+    color: #212121;
+    letter-spacing: 0.02em;
+    margin: 0;
+}
+
+/* Descrição */
+.links-description {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #212121;
+    letter-spacing: 0.02em;
+    margin: 0;
+}
+
+/* Botão */
+.links-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 217px;
+    height: 62px;
+    background: #0C97FA; /* Cor de fundo */
+    color: #F7F7F7; /* Cor do texto */
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito hover no botão */
+.links-button:hover {
+    background-color: #F7F7F7; /* Cor ao passar o mouse */
+    color: #0C97FA;
+}
+
+.useful-links {
+    max-width: 800px;
+    margin: 200px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    margin-top: 20px;
+}
+
+
+.link-card {
+    margin-bottom: 20px;
+    padding: 15px;
+   
+}
+
+
+
+.link-card h3 {
+    font-size: 20px;
+    color: #212121;
+    margin-bottom: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 10px;
+}
+
+.link-card p {
+    font-size: 16px;
+    color: #212121;
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.link-card a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #0C97FA;
+    transition: color 0.3s ease;
+}
+
+.link-card a:hover {
+    color: #055FAF;
 }
 
 
@@ -684,6 +768,15 @@ img {
         font-size: 40px;
         line-height: 48px;
     }
+    .projects {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .project-card {
+        width: 200px;
+        height: 220px;
+    }
 }
 
 /* TABLET (largura entre 768px e 1023px) */
@@ -706,6 +799,33 @@ img {
         font-size: 30px;
         line-height: 40px;
     }
+    .home-projects {
+        padding: 20px 30px;
+    }
+
+    .projects {
+        gap: 15px;
+    }
+
+    .project-card {
+        width: 150px;
+        height: 165px;
+    }
+
+    .section-tag-title {
+        font-size: 16px;
+    }
+
+    .cartilhas-content {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+    
+      .cartilha-item {
+        width: 200px;
+        height: 300px;
+      }
 }
 
 /* MOBILE (largura menor que 768px) */
@@ -733,4 +853,13 @@ img {
         line-height: 32px;
         text-align: center;
     }
+
+    .cartilha-item {
+        width: 150px;
+        height: 220px;
+      }
+    
+      .cartilhas-title h2 {
+        font-size: 16px;
+      }
 }

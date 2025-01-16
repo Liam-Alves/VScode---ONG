@@ -54,11 +54,17 @@
 
 .footer-logo-outro {
     font-weight: 400; /* Normal para "OUTRO" */
+    text-decoration: none;
+    color: #212121; /* Cor do texto do botão */
 }
 
 .footer-logo-olhar {
     font-weight: 700; /* Negrito para "OLHAR" */
+    text-decoration: none;
+    color: #212121; /* Cor do texto do botão */
 }
+
+
 
 /* Links do Rodapé */
 .footer-links {
@@ -90,11 +96,10 @@
 
 .link-list a:hover {
 
-    background-color: #D5E8D4; /* Fundo verde-claro */
-    border-radius: 6px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15); /* Sombra */
+    color: #0C97FA;
+   
     transition: background-color 0.3s, box-shadow 0.3s; /* Suavização do efeito */
-    
+   
 
 }
 

@@ -1,0 +1,259 @@
+
+/* Hero Section */
+.hero-section {
+    
+    padding: 50px 200px;
+    background: #F7F7F7;
+}
+
+.project-hero-title {
+    font-family: 'Ubuntu', Sans-serif;
+    font-weight: 400px;
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #212121;
+    line-height: 68px;
+    width: 1030px;
+    height: 68px;
+    text-align: left;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+.hero-section p {
+    font-family: 'Open sans' sans-serif;
+    font-weight: 400px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 28px;
+    color: #212121;
+    width: 1030px;
+    height: 56px;
+    margin-left: 50px;
+}
+
+
+
+.full-width-image {
+    width: 100%; /* Ajusta a largura da imagem à tela */
+    height: 540px; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaçamento em imagens inline */
+    object-fit: cover;
+}
+
+
+/* Seção de Projetos */
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding: 40px 50px;
+    gap: 30px; /* Espaçamento reduzido entre os itens */
+    width: 100%; /* Ajuste para telas responsivas */
+    background: #F7F7F7;
+    
+}
+
+/* Container dos itens do projeto */
+.project-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px; /* Reduzindo o espaçamento horizontal */
+    width: 100%; /* Ocupa todo o espaço horizontal */
+    max-width: 1200px;
+    margin-left: 200px ; /* Centraliza o conteúdo */
+}
+
+/* Estilo da imagem */
+.project-item img {
+    width: 300px;
+    height: 300px;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    object-fit: cover; /* Garante que a imagem se ajuste sem distorção */
+}
+
+/* Texto e botão do projeto */
+.project-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 800px;
+}
+
+.project-content h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 36px;
+    line-height: 1.2;
+    color: #212121;
+    margin: 0;
+}
+
+.project-content p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555555;
+    margin: 0;
+}
+
+.project-content .button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px; 
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #FFFFFF;
+    background: #0C97FA;
+    border: none;
+    border-radius: 6px;
+    width: 136px;
+    height: 62px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
+
+.project-content .button:hover {
+    background: #005FA8; /* Cor mais escura no hover */
+}
+
+.project-content .button a {
+    text-decoration: none;
+    color: #F7F7F7; /* Cor do texto do botão */
+}
+
+/* ===========================
+   SEÇÃO NEWSLETTER
+=========================== */
+
+.newsletter-project-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 40px;
+    width: 100%;
+    max-width: 1920px;
+    height: 590px;
+    background: #0C97FA;
+    margin: 80px auto;
+}
+    
+
+/* CTA com Texto */
+.newsletter-project-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 493px;
+    height: 301px;
+  
+}
+
+
+
+.newsletter-project-title {
+    font-family: 'Ubuntu';
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+    color: #F7F7F7;
+}
+
+.newsletter-project-description {
+    font-family: 'Open Sans';
+    font-size: 20px;
+    line-height: 27px;
+    color: #F7F7F7;
+}
+
+/* Formulário da Newsletter */
+.newsletter-project-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 500px;
+    height: auto;
+}
+
+.newsletter-project-input {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(33, 33, 33, 0.5);
+    border-radius: 4px;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 24px;
+    color: #212121;
+}
+
+/* Botão de Enviar */
+.newsletter-project-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 250px;
+    height: 62px;
+    background: #F7F7F7;
+    border-radius: 6px;
+    border: none; /* Remove qualquer borda */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); /* Sombra para destaque */
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #0C97FA;
+    cursor: pointer;
+    
+}
+
+.newsletter-project-button:hover {
+    background-color: #0C97FA;
+    color: #F7F7F7;
+}
+
+
+.text-section {
+    font-family: 'Open Sans', Sans-serif;
+    font-weight: 400px;
+    font-size: 20px;
+    color: #212121;
+    line-height: 28px;
+    width: auto;
+    text-align: left;
+    margin-left: 50px;
+    
+}
+
+.rocks-title {
+    font-family: 'Ubuntu', Sans-serif;
+    font-weight: 500px;
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #212121;
+    line-height: 68px;
+    width: auto;
+    text-align: left;
+    margin-left: 50px;
+    
+}
+
+
+

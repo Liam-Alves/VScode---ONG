@@ -12,6 +12,8 @@
     border-color: #212121;
     box-sizing: border-box;
     margin-top: 70px;
+    
+   
 }
 
 .nav-items {
@@ -44,7 +46,7 @@
 
 /* Efeito de hover */
 .nav-item:hover {
-    background-color: #D5E8D4; /* Fundo verde-claro */
+    background-color: #E7F0FE; 
     border-radius: 6px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
     transition: background-color 0.3s, box-shadow 0.3s; /* Suavização do efeito */
